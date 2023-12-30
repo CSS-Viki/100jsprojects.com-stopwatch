@@ -31,7 +31,7 @@ function stopWatch() {
 
 const startTimer = () => {
   if (timer !== null) clearInterval(timer); // If there is a timer running, it clears that interval to avoid multiple timers running at once.
-  timer = setInterval(stopWatch, 10);
+  timer = setInterval(stopWatch, 1000);
 };
 const stopTimer = () => {
   clearInterval(timer);
